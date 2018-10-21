@@ -110,7 +110,6 @@ public class Apriori {
     }
     //根据apriori算法连接出"候选"k+1频繁项集
     static public List<Item> apriori_gen(List<Item> list , int k, DataBase dataBase){  //k代表第几层，即每个项中的商品的数量
-
         //新建一个k+1层的项集
         List<Item> new_list = new ArrayList<>();
         //两层循环遍历k频繁项集，并判断是否可以连接
